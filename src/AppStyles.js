@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { colours } from './theme';
 // import { colours, spacing } from '../../theme';
 
 export default {
     Wrapper: styled.div`
-      
+        color: ${colours.grey};
     `,
     Row: styled.div`
         display: flex;

@@ -16,7 +16,7 @@ const App = () => {
   }, []);
   
   return (
-    <div className="App">
+    <SC.Wrapper className="App">
       <Header />
       <SC.Row>
         <SC.Filter>
@@ -30,7 +30,7 @@ const App = () => {
           <ProductList />
         </SC.ProductList>
       </SC.Row>
-    </div>
+    </SC.Wrapper>
   );
 }
 
