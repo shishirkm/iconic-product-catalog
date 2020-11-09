@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    <div
+      className="App"
+    >
+      <Header>
+        <styled.div>
+          <div
+            className="sc-bdfBwQ enELhY"
+          >
+            <div
+              className="header-text"
+            >
+              THE ICONIC
+            </div>
+          </div>
+        </styled.div>
+      </Header>
+      <styled.div>
+        <div
+          className="sc-crrsfI fBeTKC"
+        >
+          <styled.div>
+            <div
+              className="sc-dQppl jVREIy"
+            >
+              <ProductFilter>
+                <styled.div>
+                  <div
+                    className="sc-pFZIQ"
+                  >
+                    <styled.div
+                      className="label"
+                    >
+                      <div
+                        className="sc-jrAGrp kBcrbI label"
+                      >
+                        Category
+                      </div>
+                    </styled.div>
+                  </div>
+                </styled.div>
+              </ProductFilter>
+            </div>
+          </styled.div>
+          <styled.div>
+            <div
+              className="sc-bqyKva kYYQjz"
+            >
+              <styled.div>
+                <div
+                  className="sc-kstrdz UYgsY"
+                >
+                  <ProductSearch>
+                    <styled.div>
+                      <div
+                        className="sc-hBEYos gngunG"
+                      >
+                        <input
+                          onChange={[Function]}
+                          placeholder="Search by name"
+                          type="text"
+                        />
+                      </div>
+                    </styled.div>
+                  </ProductSearch>
+                  <ProductSort>
+                    <styled.div>
+                      <div
+                        className="sc-fodVxV ihGFCi"
+                      >
+                        <select
+                          id="sort-products"
+                          name="sort"
+                          onChange={[Function]}
+                        >
+                          <option
+                            key="popularity"
+                            value="popularity"
+                          >
+                            Popularity
+                          </option>
+                          <option
+                            key="priceDesc"
+                            value="priceDesc"
+                          >
+                            Price High to Low
+                          </option>
+                          <option
+                            key="priceAsc"
+                            value="priceAsc"
+                          >
+                            Price Low to High
+                          </option>
+                          <option
+                            key="brandAsc"
+                            value="brandAsc"
+                          >
+                            Brand A to Z
+                          </option>
+                          <option
+                            key="brandDesc"
+                            value="brandDesc"
+                          >
+                            Brand Z to A
+                          </option>
+                        </select>
+                      </div>
+                    </styled.div>
+                  </ProductSort>
+                </div>
+              </styled.div>
+              <ProductList>
+                <styled.div>
+                  <div
+                    className="sc-iBPRYJ knmzvq"
+                  >
+                    <styled.div>
+                      <div
+                        className="sc-fubCfw dMXtRu"
+                      />
+                    </styled.div>
+                  </div>
+                </styled.div>
+              </ProductList>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </div>
+  </App>
+</Provider>
+`;
