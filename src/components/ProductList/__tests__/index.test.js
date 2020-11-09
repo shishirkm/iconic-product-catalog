@@ -5,6 +5,7 @@ import { createStore } from "redux";
 import ProductList from "..";
 import formatPrice from "../../../helpers/formatPrice";
 import data from '../__mocks__/data.json';
+import * as windowMock from '../../../helpers/window';
 
 describe("Product List Component", () => {
     
@@ -42,5 +43,11 @@ describe("Product List Component", () => {
 
   it("should display product messaging", () => {
     expect(wrapper.find("div.product-list-card .messaging").first().text()).toBe(product.messaging.marketing[0].short);
+  });
+
+  it("should navigate to details page on click", () => {
+    windowMock.redirectTo = jest.fn();
+    wrapper.find("div.product-list-card").first().simulate('click');
+    expect(windowMock.redirectTo).toBeCalledWith(product.link);
   });
 });

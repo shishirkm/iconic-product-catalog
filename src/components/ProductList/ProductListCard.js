@@ -2,10 +2,16 @@ import React from "react";
 import SC from "./styles/productListCardStyles";
 import PropTypes from "prop-types";
 import formatPrice from "../../helpers/formatPrice";
+import { redirectTo } from "../../helpers/window";
 
 const ProductListCard = ({ product }) => {
+
+  const goToProductDetails = () => {
+    redirectTo(product.link);
+  }
+
   return (
-    <SC.Card className="product-list-card">
+    <SC.Card onClick={goToProductDetails} className="product-list-card">
       <SC.Image 
         className="image" 
         src={product._embedded.images[0].thumbnail} 
